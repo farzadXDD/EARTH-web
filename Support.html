@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARTH - SUPPORT</title>
+    <link rel="shortcut icon" href="pictures/Earth.png" type="image/x-icon">
+    <style>
+        :root{
+            --cursor: url(icon/earth-cursor-hand.png), auto;
+            ---cursor: url(icon/icon-text.png), text;
+        }
+        *{
+            margin: 0;
+        }
+        body{
+            background-image: url(pictures/back-earth.jpg);
+            background-size: cover;
+            color: #C5C6C7;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            cursor: url(icon/earth-cursor.png), auto;
+        }
+        .header{
+            justify-content: center;
+            display: flex;
+            background-color: none;
+            width: 100%;
+            padding: 50px;
+
+        }
+        .div-head{
+            width: calc(100%/3);
+            height: 100%;
+        }
+        .main{
+            text-align: center;
+            width: 46%;
+            height: 60%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1{
+            margin: 10px;
+            margin-bottom: 90px;
+            font-size: 1000%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #66FCF1;
+            text-shadow: 0 0 19px #66FCF1;
+        }
+        h2{
+            margin-bottom: 5%;
+            text-shadow: 0 1px 20px #dfdfdf;
+            font-size: 250%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .link-center{
+            text-decoration: none;
+            color: #66FCF1;
+            text-shadow: 1px 3px 19px #66FCF1;
+            margin: 3%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: all ease-out 1.3s;
+        }
+        .link-center:hover{
+            text-shadow: 0 1px 30px #66FCF1;
+            transform: scale(1.1);
+            border-radius: 10px ;
+            padding: 8px;
+            box-shadow: 0 3px 40px #66FCF1;
+
+        }
+        img{
+            width: 60px;
+            box-shadow: 0 3px 40px #66FCF1;
+            border-radius: 50%;
+            padding: 3px;
+            transition: all ease-out 1.3s;
+        }
+        img:hover{
+            box-shadow:  0 1px 50px #66FCF1;
+            transform: scale(1.1);
+        }
+        .input-btn-login-head{
+            background: none;
+            text-align: center;
+            box-shadow:  0 1px 20px #66FCF1;
+            padding: 10px;
+            width: 23%;
+            border: none;
+            border-radius: 50% 10% 50% 10% / 10% 50% 10% 50% ;
+            font-size: 17px;
+            top: 50%;
+            left: 50%;
+            transform: translate(+270%, -10%);
+            color: #66fcf2a2;
+            transition: all ease-out 1.3s;
+        }
+        .input-btn-login-head:hover{
+            color: #66FCF1;
+            box-shadow:  0 3px 60px #66FCF1;
+            cursor: pointer;
+        }
+        .support-search{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 4.3%;
+            box-shadow:  0 1px 20px #66FCF1;
+            padding: 10px;
+            border-radius: 20px 1% 1% 20px / 0% 50% 10% 50% ;;
+            background: none;
+            font-size: 15px;
+            border: none;
+            text-shadow: 0 1px 50px #66FCF1;
+            color: #000000;
+            text-align: center;
+            width: 80%;
+            background-color: #C5C6C7;
+            transition: all ease-out 1.3s;
+        }
+        .support-search:hover{
+            box-shadow:  0 3px 60px #66FCF1;
+        }
+        .input-btn-search{
+            text-align: center;
+            box-shadow:  0 1px 20px #66FCF1;
+            width: 16%;
+            padding: 9px;
+            border: none;
+            font-size: 16px;
+            height: 7.7%;
+            top: 50%;
+            left: 50%;
+            transform: translate(+2%, +2%);
+            background-color: #c5c6c7ef;
+            border-radius: 50% 10% 50% 10% / 10% 50% 10% 50% ;
+            transition: all ease-out 1.3s;
+        }
+        .input-btn-search:hover{
+            box-shadow:  0 3px 60px #66FCF1;
+            cursor: pointer;
+        }
+        ::placeholder{
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="div-head">
+            <a href="home.html" class="logo">
+                <img src="pictures/Earth.png" alt="" srcset="">
+            </a>
+        </div>
+        <div class="div-head" style="direction: ltr;">
+            <a href="home.html" class="link-center">HOME</a>
+            <a href="blog.html" class="link-center">BLOG</a>
+            <a href="ABOUT US.html" class="link-center">ABOUT US</a>
+            <a href="Support.html" class="link-center" style="text-shadow: 0 1px 30px #66FCF1;
+            transform: scale(1.1);
+            border-radius: 10px ;
+            padding: 8px;
+            box-shadow: 0 3px 40px #66FCF1;">SUPPORT</a>
+        </div>
+        <div class="div-head">
+            <label for="search"></label>
+            <form action="">
+                <a href="login.html"><input type="button" value="Sign in" class="input-btn-login-head"></a>
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <h1>SUPPORT</h1>
+        <h2>HOW CAN WE HELP?</h2>
+        <form action="">
+            <label for="support-s"></label>
+            <input type="text" class="support-search" name="support-s" placeholder="- - S e a r c h - -">
+            <input type="submit" value="🔍" class="input-btn-search">
+        </form>
+    </div>
+</body>
+</html>

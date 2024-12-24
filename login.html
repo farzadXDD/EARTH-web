@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EARTH - SIGN IN</title>
+    <link rel="shortcut icon" href="pictures/Earth.png" type="image/x-icon">
+    <style>
+        :root{
+            --cursor: url(icon/earth-cursor-hand.png), auto;
+            ---cursor: url(icon/icon-text.png), text;
+            ----cursor: url(icon/sign-in.png);
+        }
+        *{
+            margin: 0;
+        }
+        body{
+            background-image: url(pictures/back-earth.jpg);
+            background-size: cover;
+            color: #C5C6C7;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            cursor: url(icon/earth-cursor.png), auto;
+        }
+        .header{
+            justify-content: center;
+            display: flex;
+            background-color: none;
+            width: 100%;
+            padding: 50px;
+
+        }
+        .div-head{
+            width: calc(100%/3);
+            height: 100%;
+        }
+        .main{
+            backdrop-filter: blur(70px);
+            text-align: center;
+            width: 490px;
+            height: 520px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 14px;
+            box-shadow:  0 1px 50px #66FCF1;
+            border: .1px solid rgba(255, 255, 255, 0.384);
+        }
+        h1{
+            cursor: var(---cursor);
+            margin: 20px;
+            margin-bottom: 40px;
+            font-size: 440%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #66FCF1;
+            text-shadow: 0 0 19px #66FCF1;
+        }
+        .link-center{
+            text-decoration: none;
+            color: #66FCF1;
+            text-shadow: 1px 3px 19px #66FCF1;
+            margin: 3%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: all ease-out 1.3s;
+        }
+        .link-center:hover{
+            text-shadow: 0 1px 30px #66FCF1;
+            transform: scale(1.1);
+            border-radius: 10px ;
+            padding: 8px;
+            box-shadow: 0 3px 40px #66FCF1;
+
+        }
+        img{
+            width: 60px;
+            box-shadow: 0 3px 40px #66FCF1;
+            border-radius: 50%;
+            padding: 3px;
+            transition: all ease-out 1.3s;
+            
+        }
+        img:hover{
+            box-shadow:  0 1px 50px #66FCF1;
+            transform: scale(1.1);
+            cursor: var(--cursor);
+        }
+        .input-btn-login-head{
+            background: none;
+            text-align: center;
+            box-shadow:  1px 2px 30px #66FCF1;
+            padding: 10px;
+            width: 23%;
+            border: #66fcf2c7 .1px solid;
+            border-radius: 50% 10% 50% 10% / 10% 50% 10% 50% ;
+            font-size: 17px;
+            top: 50%;
+            left: 50%;
+            transform: translate(+270%, -10%);
+            color: #66fcf2a2;
+            text-shadow: 0 1px 10px #66FCF1;
+            transition: all ease-out 1.3s;
+        }
+        .input-btn-login-head:hover{
+            color: #66FCF1;
+            box-shadow:  0 3px 70px #66FCF1;
+            cursor: var(----cursor);
+        }
+        .a-register{
+            text-decoration: none;
+            color: #C5C6C7;
+            text-shadow: 0 0 6px #C5C6C7;
+            font-size: 18px;
+            
+        }
+        .a-forgot{
+            text-decoration: none;
+            color: #C5C6C7;
+            text-shadow: 0 0 6px #C5C6C7;
+            font-size: 18px;
+            margin-left: 90px;
+        }
+        .inp-user, .inp-pass{
+            cursor: var(---cursor);
+            font-size: medium;
+            background: none;
+            padding: 17px;
+            border-radius: 50px;
+            width: 70%;
+            margin: 10px;
+            color: #ffffff;
+            border: .1px solid rgba(255, 255, 255, 0.384);
+            padding-left: auto;
+        }
+        .btn-login{
+            width: 80%;
+            background: none;
+            padding: 17px;
+            border-radius: 50px;
+            background-color: #66FCF1;
+            font-size: medium;
+            margin: 30px;
+            border: none;
+            border-radius: 50px;
+            transition: all ease-out 1.3s;
+        }
+        .btn-login:hover{
+            cursor: var(--cursor);
+            box-shadow:  0 3px 60px #66FCF1;
+            background-color: #66fcf2ee;
+        }
+        a{
+            cursor: var(--cursor);
+        }
+        ::placeholder{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="div-head">
+            <a href="home.html">
+                <img src="pictures/Earth.png" alt="" srcset="">
+            </a>
+        </div>
+        <div class="div-head" style="direction: ltr;">
+            <a href="home.html" class="link-center">HOME</a>
+            <a href="blog.html" class="link-center">BLOG</a>
+            <a href="ABOUT US.html" class="link-center">ABOUT US</a>
+            <a href="Support.html" class="link-center">SUPPORT</a>
+        </div>
+        <div class="div-head">
+            <form action="">
+                <a href="login.html"><input type="button" value="Sign in" class="input-btn-login-head"></a>
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <h1>SIGN IN</h1>
+        <form action="">
+            <label for="email"></label>
+            <input type="email" name="email" id="" placeholder="Email" class="inp-user">
+
+            <label for="password"></label>
+            <input type="password" name="password" minlength="8" placeholder="Password" class="inp-pass"><br>
+
+            <input type="checkbox" name="checkbox" style="margin-top: 20px;">
+            <label for="checkbox" style="font-size: 18px;"> Remember me</label>
+
+            <a href="" class="a-forgot">Forgot password?</a><br>
+            <input type="submit" value="SIGN IN" class="btn-login">
+            <p>Don`t have an account? <a href="" class="a-register"> Register</a></p>
+        </form>
+    </div>
+</body>
+</html>
